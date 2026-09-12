@@ -1,0 +1,268 @@
+# Autonomous Delivery Rover — Project Proposal
+
+**Project Status:** Planning
+
+**Author:** Desmond Atehnchong Atem
+
+**Date:**  12 September 2026
+
+---
+
+## 1. Introduction
+
+Autonomous mobile robots can be used to transport objects within controlled environments without requiring continuous human operation.
+
+This project will investigate the design and development of a small autonomous indoor mobile robot capable of transporting a small payload between predefined locations while detecting and avoiding obstacles.
+
+The project will combine mechanical design, electronics, embedded programming, control, and robotics software into a single integrated mechatronics system.
+
+---
+
+## 2. Project Objective
+
+The primary objective is to design, build, and experimentally evaluate an autonomous mobile robot capable of:
+
+1. Moving reliably under its own power
+2. Detecting obstacles in its environment
+3. Avoiding obstacles without direct human control
+4. Navigating toward predefined destinations
+5. Carrying and delivering a small payload
+6. Operating reliably for a defined period of time
+
+A secondary objective is to progress from an off-the-shelf prototype to a more integrated system featuring a custom PCB designed using KiCad.
+
+---
+
+## 3. Motivation
+
+The project is intended to provide practical experience in mechatronics and robotics by requiring the integration of several engineering disciplines.
+
+The project will provide experience with:
+
+* Mechanical CAD and design
+* Electronics and circuit design
+* Microcontrollers and embedded programming
+* Sensors and actuators
+* Motor control
+* Feedback systems
+* Autonomous robotics
+* Experimental testing
+* Engineering documentation
+* Version control and software development practices
+
+Rather than learning each technology independently, the project will use the robot as a practical application through which these skills can be developed.
+
+---
+
+## 4. Initial System Concept
+
+The initial robot is expected to use a differential-drive configuration consisting of two independently driven wheels and one or more passive support wheels.
+
+The initial prototype will likely include:
+
+* A microcontroller
+* Two DC motors
+* Motor driver
+* Wheel encoders
+* Distance sensors
+* Battery
+* Voltage regulation
+* Servo motor or other actuator for payload delivery
+
+The exact components will be selected after establishing the system requirements.
+
+---
+
+## 5. Development Strategy
+
+The robot will be developed incrementally rather than attempting to build the complete autonomous system immediately.
+
+### Stage 1 — Basic Platform
+
+Develop a functioning mobile platform capable of:
+
+* Forward motion
+* Reverse motion
+* Left and right turns
+* Variable motor speed
+
+### Stage 2 — Sensing
+
+Integrate distance sensors and develop reliable sensor-reading software.
+
+The robot should be capable of detecting obstacles within a defined range.
+
+### Stage 3 — Feedback Control
+
+Integrate wheel encoders and investigate closed-loop motor control.
+
+The objective is to improve the robot's ability to maintain a desired speed and travel a specified distance.
+
+### Stage 4 — Autonomous Behaviour
+
+Develop algorithms for:
+
+* Obstacle detection
+* Obstacle avoidance
+* Basic waypoint navigation
+
+### Stage 5 — Custom Electronics
+
+After the prototype electronics are understood and validated, design a custom PCB that integrates the major electronic subsystems.
+
+The PCB design will be developed in KiCad and tested before being integrated into the robot.
+
+### Stage 6 — Final Integration
+
+Integrate the mechanical, electrical, and software systems into a complete autonomous platform.
+
+### Stage 7 — Testing and Validation
+
+Develop quantitative tests to evaluate:
+
+* Navigation accuracy
+* Obstacle avoidance
+* Travel distance
+* Operating time
+* Payload capability
+* System reliability
+
+---
+
+## 6. Preliminary Requirements
+
+The following requirements are initial targets and will be refined during the requirements and design phases.
+
+| Requirement                |     Initial Target |
+| -------------------------- | -----------------: |
+| Payload capacity           |            ≥ 500 g |
+| Autonomous operation       |           Required |
+| Obstacle detection         |           Required |
+| Obstacle avoidance         |           Required |
+| Waypoint navigation        |           Required |
+| Battery operation          |           Required |
+| Custom PCB                 | Final-project goal |
+| CAD-designed chassis       |           Required |
+| Payload delivery mechanism |           Required |
+
+Additional quantitative requirements will be established before hardware selection.
+
+---
+
+## 7. Constraints
+
+The project will be developed under the following constraints:
+
+* Indoor operation
+* Limited physical size
+* Limited project budget
+* Battery-powered operation
+* Small payload
+* Development alongside university coursework
+* Components should be reasonably accessible to a student
+
+The design should prioritize simplicity and reliability before advanced functionality.
+
+---
+
+## 8. Stretch Goals
+
+The following features may be investigated after the core system is functional:
+
+* PID motor control
+* Improved localization
+* Mapping
+* Path planning
+* Computer vision
+* Wireless communication
+* Higher-level robotics software
+* ROS 2 integration
+
+These features are not required for the initial prototype.
+
+---
+
+## 9. Success Criteria
+
+The project will be considered successful when the final system can demonstrate reliable autonomous operation under a defined test environment.
+
+The final evaluation will consider:
+
+* Whether the robot can travel between predefined locations
+* Whether it can detect and avoid obstacles
+* Whether it can transport the specified payload
+* Whether the robot can operate without continuous manual control
+* Whether the mechanical and electrical systems operate reliably
+* Whether the measured performance satisfies the final requirements
+
+Performance will be evaluated using experimental data rather than subjective observations.
+
+---
+
+## 10. Documentation Plan
+
+The development process will be documented throughout the project.
+
+Documentation will include:
+
+* Project requirements
+* System architecture
+* Mechanical design iterations
+* Electrical design
+* PCB development
+* Software architecture
+* Design decisions
+* Experimental procedures
+* Test results
+* Problems encountered
+* Design changes
+* Final performance
+* Lessons learned
+
+All major software changes will be tracked using Git.
+
+CAD, schematics, PCB files, diagrams, photographs, and relevant test data will be maintained in the project repository where appropriate.
+
+---
+
+## 11. Expected Learning Outcomes
+
+By completing the project, I expect to develop practical experience in:
+
+* Embedded C/C++ programming
+* Microcontroller development
+* Electronics
+* Sensors and actuators
+* DC motor control
+* Feedback control
+* Mechanical CAD
+* PCB design
+* Robotics
+* Autonomous systems
+* Experimental testing
+* Technical documentation
+* Git and GitHub
+
+The project will also provide practical experience integrating these disciplines into a single engineering system.
+
+---
+
+## 12. Future Development
+
+The project is intentionally designed to support future development.
+
+Once the basic autonomous rover is functional, additional capabilities can be added without requiring the entire system to be redesigned.
+
+Potential future directions include improved localization, mapping, computer vision, more advanced navigation, and integration with a robotics middleware such as ROS 2.
+
+---
+
+## 13. Conclusion
+
+This project will involve the design, construction, programming, and testing of an autonomous indoor delivery rover.
+
+The development will begin with a simple prototype and progressively introduce more advanced mechanical, electrical, and software systems.
+
+The primary focus will be on building a functional and measurable system rather than attempting to incorporate every possible robotics technology.
+
+The final result will be supported by detailed engineering documentation, experimental testing, and a record of the design iterations undertaken throughout the project.
